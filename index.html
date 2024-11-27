@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Busca pela Coroa do Tempo</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0: Início -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario_0.png" alt="Cenário inicial">
+            <p>Você é um explorador enviado para encontrar a lendária Coroa do Tempo. Dizem que ela está escondida em uma ilha misteriosa. Você chega à praia após uma longa viagem. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na floresta</button>
+            <button class="btn-proximo" data-proximo="2">Caminhar pela praia</button>
+        </div>
+
+        <!-- Passo 1: Entrar na Floresta -->
+        <div class="passo" id="passo-1">
+            <p>Dentro da floresta, você encontra vestígios de uma antiga civilização e descobre um templo perdido.</p>
+            <button class="btn-proximo" data-proximo="3">Explorar o templo</button>
+            <button class="btn-proximo" data-proximo="4">Continuar pela floresta</button>
+        </div>
+
+        <!-- Passo 2: Caminhar pela Praia -->
+        <div class="passo" id="passo-2">
+            <p>Caminhando pela praia, você encontra um viajante solitário que diz conhecer segredos da ilha.</p>
+            <button class="btn-proximo" data-proximo="5">Pedir informações sobre a Coroa</button>
+            <button class="btn-proximo" data-proximo="6">Seguir sozinho pela ilha</button>
+        </div>
+
+        <!-- Passo 3: Explorar o Templo -->
+        <div class="passo" id="passo-3">
+            <p>No templo, você enfrenta armadilhas antigas, mas encontra um mapa que aponta para o vulcão onde a Coroa está escondida.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o vulcão</button>
+        </div>
+
+        <!-- Passo 4: Continuar pela Floresta -->
+        <div class="passo" id="passo-4">
+            <p>Ao continuar pela floresta, você é atacado por um grupo de feras selvagens!</p>
+            <button class="btn-proximo" data-proximo="8">Subir em uma árvore</button>
+            <button class="btn-proximo" data-proximo="2">Correr de volta para a praia</button>
+        </div>
+
+        <!-- Passo 5: Pedir informações ao viajante -->
+        <div class="passo" id="passo-5">
+            <p>O viajante conta que o vulcão da ilha é protegido por um espírito guardião e se oferece para guiá-lo ao templo.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir para o templo</button>
+        </div>
+
+        <!-- Passo 6: Seguir sozinho -->
+        <div class="passo" id="passo-6">
+            <p>Você decide continuar sozinho, mas se perde em uma parte desconhecida da ilha.</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na floresta</button>
+        </div>
+
+        <!-- Passo 7: Chegar ao vulcão -->
+        <div class="passo" id="passo-7">
+            <p>Você encontra a caverna onde a Coroa do Tempo está escondida. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Entrar imediatamente</button>
+            <button class="btn-proximo" data-proximo="10">Estudar o mapa para evitar armadilhas</button>
+        </div>
+
+        <!-- Passo 8: Subir em uma árvore -->
+        <div class="passo" id="passo-8">
+            <p>Você sobe em uma árvore e as feras vão embora. Você decide voltar para a praia.</p>
+            <button class="btn-proximo" data-proximo="2">Voltar para a praia</button>
+        </div>
+
+        <!-- Passo 9: Entrar imediatamente -->
+        <div class="passo" id="passo-9">
+            <p>Você entra na caverna sem preparação, ativa uma armadilha e precisa fugir da ilha às pressas. A Coroa do Tempo se perde novamente.</p>
+            <p>Fim da história!</p>
+        </div>
+
+        <!-- Passo 10: Estudar o mapa -->
+        <div class="passo" id="passo-10">
+            <p>Com cuidado, você desativa as armadilhas e recupera a Coroa do Tempo. Seu povo está salvo e você se torna um herói!</p>
+            <p>Fim da história!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
